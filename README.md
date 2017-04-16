@@ -1,7 +1,6 @@
 # OOLanguageComparison
 
 ### Final Project for 2017SP CMP_SC 4330/7330
-----
 
 Object-oriented languages in comparison:
 * [Java](https://www.oracle.com/java/index.html)
