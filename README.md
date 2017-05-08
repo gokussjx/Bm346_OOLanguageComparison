@@ -16,5 +16,5 @@ Team member(s):
 * Bidyut Mukherjee (bm346)
 
 
-Comparison guide can be accessed [here](ComparisonGuide.md).
+### Comparison guide can be accessed [here](ComparisonGuide.md).
 <!--<br/>(If above link is broken, try [this link](https://github.com/gokussjx/Bm346_OOLanguageComparison/blob/master/ComparisonGuide.md))-->
