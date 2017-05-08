@@ -1062,3 +1062,12 @@ As of Swift 1.2, all global variables are instantiated lazily. Hence, the `share
     * **Synchronously**: Function returns control to the caller after the task is completed
     * **Asynchronously**: Function returns immediately, ordering the task to be done but not waiting for it. Hence, _non-blocking_ parallel execution
 * Swift supports multitasking, including by dispatching tasks asynchronously
+* An example of Swift multithreading is shown below:
+  ```swift
+  DispatchQueue.global(qos: .userInitiated).async { // move work to a background global queue and run asynchronously
+    let overlayImage = self.faceOverlayImageFromImage(self.image)
+    DispatchQueue.main.async { // Closure to access main thread asynchronously
+      self.fadeInNewImage(overlayImage) // Function invoked
+    }
+  }
+  ```
