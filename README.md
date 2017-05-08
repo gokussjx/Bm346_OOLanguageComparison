@@ -8,7 +8,7 @@ Object-oriented languages in comparison:
 
 <p align="center">
   <img align="center" src="http://www.myiconfinder.com/uploads/iconsets/128-128-0148ab901cc8f25c9d7d25f6656b1297-java.png" alt="java">
-VS
+  <b>VS</b>
 <img align="center" src="https://cdn4.iconfinder.com/data/icons/logos-3/1300/swift-seeklogo-128.png" alt="swift">
 </p>
 
