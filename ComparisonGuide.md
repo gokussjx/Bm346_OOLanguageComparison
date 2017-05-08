@@ -1,26 +1,26 @@
 # Java vs Swift: A Language Comparison Study
 
 ## 1. Language Purpose / Genesis
-##### Java:
+#### Java:
 * To be portable and to operate in distributed environments
 * To enable creation of applets for the World Wide Web
 * Targeted for digital consumer devices and computers, predicted to rise in popularity at the time
 * Created to replace [C](https://en.wikipedia.org/wiki/C_(programming_language))/[C++](https://en.wikipedia.org/wiki/C%2B%2B) for development, with better design
 
-##### Swift:
+#### Swift:
 * To be the best language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services
 * Designed to make writing and maintaining correct programs easier for developers
 * Built for the average programmer, and designed for coding even the simplest of mobile apps
 * Created to replace [Objective-C](https://en.wikipedia.org/wiki/Objective-C) as the main development language for Apple platforms
 ----
 ### 2. Unique Features of the Language
-##### Java:
+#### Java:
 * Runs on [_Java Virtual Machine_](https://en.wikipedia.org/wiki/Java_virtual_machine) (JVM)
 * Fully Object Oriented, i.e., object is at the outer most level of data structure in java. No stand alone methods, constants, and variables may exist outside of a class
 * Objects are first-class types
 * User-created types can only be reference-type
 
-##### Swift:
+#### Swift:
 * Utilizes [_Low Level Virtual Machine_](https://en.wikipedia.org/wiki/LLVM) (LLVM) to compile and run
 * Supports [Functional Programming Patterns](https://en.wikipedia.org/wiki/Functional_programming)
 * Functions and closures are first-class types
@@ -31,7 +31,7 @@
 
 ----
 ### 3. Namespaces
-##### Java:
+#### Java:
 * Explicit namespacing supported
 * Namespacing is per-file
 * A `package` is Java's mechanism for managing namespaces
@@ -50,7 +50,7 @@
     import java.io.File;    // Now we can type File instead of java.io.File
     ```
 
-##### Swift:
+#### Swift:
 * Namespacing is implicit in Swift, all classes (etc) are implicitly scoped by the module they are in. Conflicting names can be resolved by prefixing the class name
 * Namespacing is per-target (XCode module), and not per-file
 * By default, current module takes precedence to implicitly resolve conflicts
@@ -61,7 +61,7 @@
     ```
 ----
 ### 4. Types
-##### Java:
+#### Java:
 * The Primitive Data Types are all _value types_
 * Both Reference and Primitive Data types are supported in Java
 * Creation of new values types is **not** supported. Any new type can only be of _reference type_
@@ -94,7 +94,7 @@
             * (Custom types) (e.g: File, StreamBuffer, etc.)
 
 
-##### Swift:
+#### Swift:
 * Named Types created using `struct` are all _value types_
 * Both reference types and value types are supported in Swift
 * New value types can be created using `struct` or `enum`
@@ -118,7 +118,7 @@
             ```
 ----
 ### 5. Classes
-##### Java:
+#### Java:
 * Classes can be defined in Java using the keyword `class`. For example:
     ```java
     public class Dog {
@@ -173,7 +173,7 @@
     }
     ```
 
-##### Swift:
+#### Swift:
 * Classes can be defined in Swift using the keyword `class`. For example:
     ```swift
     public class Dog {
@@ -229,7 +229,7 @@
     ```
 ----
 ### 6. Instance reference name in data type (_class_)
-##### Java:
+#### Java:
 An instance can refer to its own members using the keyword `this`. For example:
 ```java
 public class Human {
@@ -241,7 +241,7 @@ public class Human {
 }
 ```
 
-##### Swift:
+#### Swift:
 An instance can refer to its own members using the keyword `self`. For example:
 ```java
 public class Human {
@@ -254,7 +254,7 @@ public class Human {
 ```
 ----
 ### 7. Properties
-##### Java:
+#### Java:
 * Java does not treat "Properties" any different from "Member variables"
 * Private member variables in Java can only be accessed using getters and setters, if outside the scope of the class definition. The language does not have in-built support for default public getters and setters, and hence, require explicit declaration by the developer. For example:
     ```java
@@ -274,7 +274,7 @@ public class Human {
     ```
 * "Backing Variables" and "Computed Properties" are not useful without a separate concept of "Properties", and hence, not applicable to Java
 
-##### Swift:
+#### Swift:
 * A _Stored Property_ is a constant or variable that is stored as part of an instance of a particular class or structure. Stored properties can be either variable stored properties (introduced by the `var` keyword) or constant stored properties (introduced by the `let` keyword). For example:
     ```swift
     struct FixedLengthRange {
@@ -301,7 +301,7 @@ public class Human {
 * Swift unifies the concept of "Property" and "Backing variable" into a single property declaration. i.e., a Swift property does not have a corresponding instance variable, and the backing store for a property is not accessed directly
 ----
 ### 8. Interfaces / Protocols
-##### Java:
+#### Java:
 * Java primarily supports polymorphism through _Interfaces_, and also allows classes to be bound to "contracts" using the same construct
 * Java Interfaces are treated like a class, except they can only contain method signatures and fields
 * They cannot contain any method implementation, but only the signature (name, parameters and exceptions) of the method
@@ -339,7 +339,7 @@ public class Human {
     }
     ```
 
-##### Swift:
+#### Swift:
 * Swift _Protocols_ are used in an identical manner as Java's Interfaces
 * In Swift, a protocol can be adopted by a class, structure, or enumeration, to provide implementation of the required methods
 * Protocol declaration involves using the keyword `protocol`. For example:
@@ -376,7 +376,7 @@ public class Human {
     ```
 ----
 ### 9. Inheritance / Extension
-##### Java:
+#### Java:
 * Java allows a class to inherit from a single superclass (single inheritance)
 * The methods declared in the superclass can be overriden in the derived class using the annotation `@Override`
 * A class can inherit from a superclass using the keyword `extends`. For example:
@@ -397,7 +397,7 @@ public class Human {
     ```
 * A class cannot be extended directly in java after declaration
 
-##### Swift:
+#### Swift:
 * Swift supports single inheritance
 * The methods declared in the base class can be overridden using the keyword `override`
 * A class can inherit from a base class using the symbol `:`. For example:
@@ -433,7 +433,7 @@ public class Human {
 * Extensions can provide additional initializers, methods, and computed properties
 ----
 ### 10. Reflection
-##### Java:
+#### Java:
 * The required classes for java reflection are provided under `java.lang.reflect` package
 * Under java reflection API, we can invoke methods at runtime irrespective of the access specifier used with them
 * Reflection can be used to get information about:
@@ -456,7 +456,7 @@ public class Human {
       ```
 * And many other pieces of information can be obtained, including _superclass_, _canonicalName_, _annotations_, etc.
 
-##### Swift:
+#### Swift:
 * Swift supports runtime inspection of code through reflection
 * Swift's reflection capabilities are based around a `struct` called _Mirror_. You create a mirror for a particular `subject` and the mirror will then let you query it
 * _Reflecting initializers_ can be used to easily create a mirror. For example:
@@ -547,7 +547,7 @@ public class Human {
       ```
 ----
 ### 11. Memory management
-##### Java:
+#### Java:
 * Java does not allow manual memory management. Instead, it relies on its own **Garbage Collection** (GC) mechanism. Java Garbage Collection is the process to identify and remove the unused objects from the memory and free space to be allocated to objects created in the future processing
 * Basic Garbage Collection involves 3 steps:
   * **Marking**
@@ -561,14 +561,14 @@ public class Human {
   * -Xmx
   * -XX:MaxPermGen, etc.
 
-##### Swift:
+#### Swift:
 * Memory management in Swift is handled automatically by **Automatic Reference Counting** (ARC). Whenever a variable holds an instance of a class, the memory count for that object increases by 1. If the variable goes out of scope or gets set to nil, the memory count decreases by 1
 * ARC keeps track of _Reference Cycles_ to manage memory. Strong References increment or decrement the reference count, while _Weak_ and _Unowned References_ do not
 * Reference cycles can cause memory leaks, and can be avoided by declaring leak-causing variables as `weak` or `unowned`, depending on the use
 
 ----
 ### 12. Comparisons of references and values
-##### Java:
+#### Java:
 * Value types can be directly compared using the `==` operator. For example:
     ```java
     int a = 10;
@@ -599,7 +599,7 @@ public class Human {
     }
     ```
 
-##### Swift:
+#### Swift:
 * All types' values can be compared using the `==` operator. For example:
     ```swift
     let a = 10
@@ -623,7 +623,7 @@ public class Human {
     ```
 ----
 ### 13. Null/nil references
-##### Java:
+#### Java:
 * In Java, `null` keyword is used as a special value to signify:
   * Uninitialized state
   * Termination condition
@@ -640,7 +640,7 @@ public class Human {
     }
     ```
 
-##### Swift:
+#### Swift:
 * Swift uses the keyword `nil` to denote the absence of a value of a certain type
 * The language provides a construct to manage `nil`, using the `Optional` _enumeration_. A data type can never be assigned nil unless it is an optional. An optional type has the symbol `?` suffixed to an existing type. For example:
     ```swift
@@ -666,7 +666,7 @@ public class Human {
       ```
 ----
 ### 14. Errors and exception handling
-##### Java:
+#### Java:
 * Java identifies three categories of Exceptions:
   * **Checked Exceptions**: An exception that occurs at the compile time; also called as _Compile-time Exceptions_. These exceptions cannot simply be ignored at the time of compilation. The programmer needs to take care of (handle) these exceptions. For example:
     ```java
@@ -718,7 +718,7 @@ public class Human {
     }
     ```
 
-##### Swift:
+#### Swift:
 * In Swift, errors are represented by values of types that conform to the `Error` protocol. This empty protocol indicates that a type can be used for error handling.
 * Any function can be allowed to safely fail by throwing errors. For example:
     ```swift
@@ -743,7 +743,7 @@ public class Human {
 * Unlike most languages, error handling in Swift does **not** involve unwinding the call stack, a process that can be computationally expensive
 ----
 ### 15. Lambda expressions, closures, or functions as types
-##### Java:
+#### Java:
 * Lambda expressions are a new construct in Java, supported in Java 8+. They are implemented using _Functional Interfaces_ (Interfaces annotated with `@FunctionalInterface`, containing only one abstract method)
 * Java 8 has a new package, `java.util.function`, that contains a number of commonly used functional interfaces
 * In Java, the lambda expressions could be bound to variables of different types. For example:
@@ -766,7 +766,7 @@ public class Human {
     Function<String,String> concat1 = Utils::concat1; // concat1 holds a method reference to Utils::concat1
     ```
 
-##### Swift:
+#### Swift:
 * Swift supports self-contained chunks of code that can be passed around and used, called _Closures_. Closures can capture and store references to any constants and variables from the context in which they are defined. This is known as closing over those constants and variables. For example:
     ```swift
     // a closure that take one Int and return an Int
@@ -805,7 +805,7 @@ public class Human {
     ```
 ----
 ### 16. Implementation of _Listeners_ and _Event Handlers_
-##### Java:
+#### Java:
 * There are three pieces to this construct in Java:
     * **The Component**: Generates events. An event is a component's way of letting a listener know that something has happened.
     * **The Event Class**: Holds all of the information necessary for a listener to figure out what happened.
@@ -824,7 +824,7 @@ public class Human {
     }
     ```
 
-##### Swift:
+#### Swift:
 * Triggers and Events can be handled in multiple ways under Swift:
     * **KVO**: _Key-Value-Observing_ is a capability inherited from the language predecessor, Objective-C. KVO features come with the class `NSObject`, which can be inherited to provide the KVO capabilities. Any property which is to be observed needs to be marked as `dynamic`. For example:
         ```swift
@@ -965,7 +965,7 @@ public class Human {
 * Swift's Interface Builder can be used to directly connect view `Outlets` to view `Actions`
 ----
 ### 17. Singleton
-##### Java:
+#### Java:
 Singleton can be implemented in a few different ways, including **thread-unsafe** and **eager** ways. Preferred way of implementing **thread-safe** and **lazy initialization** is supported and needs careful design. One of the best implementations has been given by Bill Pugh, as shown below:
 ```java
 public class Singleton {
@@ -982,7 +982,7 @@ public class Singleton {
 ```
 The `private inner static class` that contains the instance of the singleton class does not get loaded into memory until someone calls the `getInstance()` method to create the `Singleton` class instance. Hence, initialization is lazy. In addition, it does not require synchronization, and is able to be thread-safe.
 
-##### Swift:
+#### Swift:
 Since Swift 3, singletons can be easily made thread-safe and lazily initialized. For example:
 ```swift
 class SomeManager {
@@ -996,25 +996,25 @@ As of Swift 1.2, all global variables are instantiated lazily. Hence, the `share
 > “The lazy initializer for a global variable (also for static members of structs and enums) is run the first time that global is accessed, and is launched as `dispatch_once` to make sure that the initialization is atomic. This enables a cool way to use `dispatch_once` in your code: just declare a global variable with an initializer and mark it private.”
 ----
 ### 18. Procedural Programming
-##### Java:
+#### Java:
 * Java was not created with Procedural Programming paradigm in mind, but it is loosely possible to follow certain design patterns to make it look so.
 * Procedural programming can be mapped onto object-oriented programming, by using a single _default object_ to interpret all procedure calls, contain all _global variables_, and mapping procedure calls to messages to this _default object_. In this sense, any object-oriented programming could contains procedural programming.
 
-##### Swift:
+#### Swift:
 * Swift is more open towards multiple language paradigms than Java. Hence, procedural programming is supported, especially since elements can exist outside the scope of classes
 ----
 ### 19. Functional Programming
-##### Java:
+#### Java:
 * Similar to Procedural paradigm suppot, it is loosely possible to emulate Functional Programming paradigm in Java
 * Using Java 8's _lambda expressions_ and _anonymous functions_ facilitates writing programs in this paradigm. For instance, functions can be stored as objects using Functional Interfaces
 * Java has many derivative languages, including a popular functional language **Scala** (Scalable Language)
 
-##### Swift:
+#### Swift:
 * Swift natively supports functional programming
 * Programs can be written in Swift using fully functional design
 ----
 ### 20. Multithreading
-##### Java:
+#### Java:
 * Java is a multi-threaded programming language. There's two major ways of creating multi-threaded programs in Java:
     * **Create a Thread by Implementing a Runnable Interface**: The `Runnable` interface defines a single method, `run()`, meant to contain the code executed in the thread. The `Runnable` object is passed to the `Thread` constructor, as in the `HelloRunnable` example:
         ```java
@@ -1044,7 +1044,7 @@ As of Swift 1.2, all global variables are instantiated lazily. Hence, the `share
 * Multitasking can be achieved by letting multiple threads start or run in parallel
 * Under Java's JavaFX framework, multitasking can be achieved using `Platform.runLater()`, or by using `Task` class
 
-##### Swift:
+#### Swift:
 * Swift supports concurrency using **Grand Central Dispatch** (GCD). It provides three main types of queues:
     * **Main queue**: runs on the main thread and is a serial queue
     * **Global queue**: concurrent queues that are shared by the whole system. There exist 4 such queues with different priorities: {_high, default, low, background_}
