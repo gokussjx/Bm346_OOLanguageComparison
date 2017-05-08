@@ -1003,21 +1003,24 @@ As of Swift 1.2, all global variables are instantiated lazily. Hence, the `share
 ----
 ### 18. Procedural Programming
 #### Java:
-* Java was not created with Procedural Programming paradigm in mind, but it is loosely possible to follow certain design patterns to make it look so.
-* Procedural programming can be mapped onto object-oriented programming, by using a single _default object_ to interpret all procedure calls, contain all _global variables_, and mapping procedure calls to messages to this _default object_. In this sense, any object-oriented programming could contains procedural programming.
+* Java was not created with Procedural Programming paradigm in mind, but it is loosely possible to follow certain design patterns to make it look so
+* If really needed, one naive way of programming procedurally in Java would be by placing all instructions in the `main` function
+* Procedural programming can be mapped onto object-oriented programming, by using a single _default object_ to interpret all procedure calls, contain all _global variables_, and mapping procedure calls to messages to this _default object_. In this sense, any object-oriented programming could contains procedural programming
 
 #### Swift:
 * Swift is more open towards multiple language paradigms than Java. Hence, procedural programming is supported, especially since elements can exist outside the scope of classes
+* All instructions can be placed in one function, allowing a programming style very closely resempling procedural paradigm
 ----
 ### 19. Functional Programming
 #### Java:
 * Similar to Procedural paradigm suppot, it is loosely possible to emulate Functional Programming paradigm in Java
-* Using Java 8's _lambda expressions_ and _anonymous functions_ facilitates writing programs in this paradigm. For instance, functions can be stored as objects using Functional Interfaces
+* Using Java 8's _lambda expressions_ and _anonymous functions_ facilitates writing programs in this paradigm. For instance, functions can be stored as objects using Functional Interfaces. Details can be found in [Section 15](https://github.com/gokussjx/Bm346_OOLanguageComparison/blob/master/ComparisonGuide.md#java-14)
 * Java has many derivative languages, including a popular functional language **Scala** (Scalable Language)
 
 #### Swift:
 * Swift natively supports functional programming
 * Programs can be written in Swift using fully functional design
+* As mentioned in [Section 15](https://github.com/gokussjx/Bm346_OOLanguageComparison/blob/master/ComparisonGuide.md#swift-14), Swift is additionally able to write programs using just constructs such as closures, function types, etc. This can result in functional programming
 ----
 ### 20. Multithreading
 #### Java:
