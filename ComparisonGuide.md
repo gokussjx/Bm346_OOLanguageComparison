@@ -1015,7 +1015,7 @@ As of Swift 1.2, all global variables are instantiated lazily. Hence, the `share
 #### Java:
 * Similar to Procedural paradigm suppot, it is loosely possible to emulate Functional Programming paradigm in Java
 * Using Java 8's _lambda expressions_ and _anonymous functions_ facilitates writing programs in this paradigm. For instance, functions can be stored as objects using Functional Interfaces. Details can be found in [Section 15](https://github.com/gokussjx/Bm346_OOLanguageComparison/blob/master/ComparisonGuide.md#java-14)
-* Java has many derivative languages, including a popular functional language **Scala** (Scalable Language)
+* Java has many derivative languages, including a popular functional language **[Scala](https://www.scala-lang.org/)** (Scalable Language)
 
 #### Swift:
 * Swift natively supports functional programming
