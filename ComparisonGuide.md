@@ -66,7 +66,7 @@
 * Both Reference and Primitive Data types are supported in Java
 * Creation of new values types is **not** supported. Any new type can only be of _reference type_
 * Broadly, there's two categories of data types, as follows:
-    1. Primitive Data Types:
+    1. **Primitive Data Types**:
         * byte
         * short
         * int
@@ -75,23 +75,23 @@
         * double
         * boolean
         * char
-    2. Reference Data Types:
-        * Derived Data Types:
+    2. **Reference Data Types**:
+        * **Derived Data Types**:
             * (arrays) (e.g: `int[]`, `char[]`, etc.)
-        * User-defined Data Types:
+        * **User-defined Data Types**:
             * Integer category data types:
                 * Byte
                 * Short
                 * Int
                 * Long
-            * Character category data types:
+            * **Character category data types**:
                 * Char
-            * Float category data types
+            * **Float category data types**:
                 * Float
                 * Double
-            * Boolean category data types
+            * **Boolean category data types**:
                 * Boolean
-            * (Custom types) (e.g: File, StreamBuffer, etc.)
+            * **(Custom types)** (e.g: File, StreamBuffer, etc.)
 
 
 #### Swift:
@@ -99,19 +99,19 @@
 * Both reference types and value types are supported in Swift
 * New value types can be created using `struct` or `enum`
 * Swift categorizes data types in two major forms, as shown below:
-    1. Named Types:
+    1. **Named Types**:
         * class (e.g: `Array`, `Dictionary`, `Set`, etc. )
         * struct (e.g: `Int`, `Double`, `String`, etc.)
         * enum (e.g: `Bit`, `Optional`, `Process`, etc.)
         * protocol (e.g: `Collection`, `Equatable`, etc.)
-    2. Compound Types:
-        * Function Types <br />
+    2. **Compound Types**:
+        * **Function Types** <br />
         (E.g.)
             ```swift
             func someFunction(left: Int, right: Int) {}
             var f = someFunction // The type of f is (Int, Int) -> Void, not (left: Int, right: Int) -> Void.
             ```
-        * Tuple Types <br />
+        * **Tuple Types** <br />
         (E.g.)
             ```swift
             var someTuple = (top: 10, bottom: 12)  // someTuple is of type (top: Int, bottom: Int)
@@ -779,7 +779,7 @@ public class Human {
 * There are three kinds of closures in Swift:
     * **Global Functions**: They have a name and cannot capture any values
     * **Nested Functions**: They have a name and can capture values from their enclosing functions
-    * **closure Expressions**: They don’t have a name and can capture values from their context
+    * **Closure Expressions**: They don’t have a name and can capture values from their context
 * Closures can be received as a parameter by functions. For example:
     ```swift
     var numbers = [1, 4, 2, 5, 8, 3]
