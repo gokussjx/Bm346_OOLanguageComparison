@@ -17,4 +17,4 @@ Team member(s):
 
 
 Comparison guide can be accessed [here](ComparisonGuide.md).
-<br/>(If above link is broken, try [this link](https://github.com/gokussjx/Bm346_OOLanguageComparison/blob/master/ComparisonGuide.md))
+<!--<br/>(If above link is broken, try [this link](https://github.com/gokussjx/Bm346_OOLanguageComparison/blob/master/ComparisonGuide.md))-->
